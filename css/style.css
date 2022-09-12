@@ -769,6 +769,7 @@ ul {
 }
 
 
+
 .footer-social{
     display: flex;
 
@@ -818,6 +819,12 @@ address {
     margin-top: 20px;
     font-style: normal;
 }
+
+
+.footer-input {
+    margin-left: 93px;
+}
+
 
 .addr {
     padding-left: 0;
@@ -951,7 +958,7 @@ address {
 /* =========== Mодальна форма ============ */
 
 .modal-form-title {
-    margin-bottom: 30px;
+    margin-bottom: 12px;
     width: 448px;
     height: 23px;
     left: 576px;
@@ -971,14 +978,16 @@ address {
 
 .modal-form-check-field {
     display: flex;
+    justify-content: center;
     align-items: center;
+    color:var(--secondarycolor);
 }
 
 .modal-form-input {
     padding-left: 40px;
     width: 100%;
     height: 40px;
-    margin-bottom: 28px;
+    margin-bottom: 10px;
     width: 448px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -1087,4 +1096,67 @@ address {
 
 .modal-form-input:focus + .modal-form-input-icon {
     fill:var(--maincolor);
+}
+
+.footer-input-block {
+    background-color: var(--bg-color-fon);
+    border-color: var(--bgcolor);
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+}
+
+.footer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    color: var(--bgcolor);
+    background: var(--maincolor);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 48px;
+    margin-left: 10px;
+    /* padding-top: 100px; */
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+}
+
+.footer-button:focus {
+    background-color: var(--secondarycolor);
+    color: var(--bgcolor);
+}
+
+.footer-button:hover {
+    background-color: var(--secondarycolor);
+    color: var(--bgcolor);
+}
+
+.footer-button::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    /* contain:cover; */
+    background: url("../images/icons/icon\ send.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* color:red; */
+    /* background-color:red; */
+
+    /* background-image: url("https://cdn-icons-png.flaticon.com/512/599/599502.png"); */
+}
+
+.test-f {
+    /* align-items: flex-end; */
+    /* margin-left: 10px; */
+    display: flex;
 }
