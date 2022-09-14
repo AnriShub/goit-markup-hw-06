@@ -12,6 +12,7 @@
     --box-shadow-card: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     --social-round-color: rgba(255, 255, 255, 0.1);
     --social-icon-color: #AFB1B8;
+    --footer-input-color: rgba(255, 255, 255, 0.6);
   }    
 
   h1, h2, h3, h4, h5, h6, p {
@@ -826,6 +827,12 @@ address {
     /* border: 1px solid var(--textcolor) */
 }
 
+.modal-close-btn use:hover, .modal-close-btn:hover {
+    fill: var(--maincolor);
+}
+
+
+
 
 
 /* =========== Mодальна форма ============ */
@@ -976,6 +983,7 @@ address {
     border-color: var(--bgcolor);
     width: 358px;
     height: 50px;
+    color: var(--footer-input-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
